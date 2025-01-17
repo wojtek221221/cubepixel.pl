@@ -63,9 +63,9 @@
 
         <div id="menu" class="md:flex flex-col md:flex-row md:items-center absolute md:static top-full left-0 w-full md:w-auto bg-[#100808]/40 backdrop-blur-[15px] md:bg-transparent md:backdrop-blur-0 shadow-lg md:shadow-none opacity-100 transform translate-y-0 transition-all duration-500 ease-out">
             <a href="../../Landing-page/src/index.html" class="block px-6 py-3 text-[#707070] text-center md:text-left md:py-0 duration-300 hover:text-gray-300 sm:mb-2">Strona główna</a>
-            <a href="../../Landing-page/src/index.html" class="block px-6 py-3 text-[#707070] text-center md:text-left md:py-0 duration-300 hover:text-gray-300 sm:mb-2">Zarząd</a>
+            <a href="../../Landing-page/src/index.html#zarzad" class="block px-6 py-3 cursor-pointer text-[#707070] text-center md:text-left md:py-0 duration-300 hover:text-gray-300 sm:mb-2">Zarząd</a>
             <a href="../../Regulations/src/index.html" class="relative block px-6 py-3 text-white text-center md:text-left md:py-0 duration-300 hover:text-gray-300 sm:mb-2 after:content-[''] after:absolute after:bottom-[-10px] after:left-1/2 after:w-[64px] after:h-[2px] after:bg-[#F00000] after:hidden after:md:flex after:transform after:-translate-x-1/2">Regulamin</a>
-            <a href="../../Shop/src/index.html" class="block px-6 py-3 text-center md:text-left md:py-0 sm:mb-2">
+            <a href="../../Landing-page/src/index.html#tryby" class="block px-6 py-3 text-center md:text-left md:py-0 sm:mb-2">
                 <button class="bg-gradient-to-tr w-full from-[#FF2323] to-[#BC2A2A] rounded-full px-8 py-2 duration-300 hover:bg-[#BC2A2A] hover:scale-[98%] flex items-center justify-center gap-2">
                     <img src="./assets/icons/shop.png" draggable="false"> Sklep
                 </button>
@@ -103,7 +103,7 @@
                 </div>
             </div>
             <div class="flex gap-[42px] items-center">
-                <a href="#"><button class="bg-gradient-to-tr from-[#FF2323] to-[#BC2A2A] rounded-full px-8 py-2 duration-300 hover:bg-[#BC2A2A] hover:scale-[98%] flex items-center justify-center gap-2"><img src="./assets/icons/dc.png" class="w-[28px] h-[28px]"> Discord</button></a>
+                <a href="https://discord.gg/cubepixel" target="_blank"><button class="bg-gradient-to-tr from-[#FF2323] to-[#BC2A2A] rounded-full px-8 py-2 duration-300 hover:bg-[#BC2A2A] hover:scale-[98%] flex items-center justify-center gap-2"><img src="./assets/icons/dc.png" class="w-[28px] h-[28px]"> Discord</button></a>
                 <button id="ip_copy" class="bg-transparent text-[20px] text-[#707070] flex gap-2 duration-300 hover:scale-[102%]"><img src="./assets/icons/copy.png" draggable="false"> Skopiuj IP</button>
             </div>
             <div id="scroll" class="flex items-center gap-2 mt-12 text-[#707070] cursor-pointer max-w-[130px]">
@@ -116,7 +116,7 @@
 </div>
 
 <!-- regulamin -->
-<div id="regulamin" class="relative w-full p-5 md:p-0 mt-[-280px] md:mt-[-50px] z-20">
+<div id="regulamin" class="relative w-full p-5 md:p-0 mt-[-280px] md:mt-[-100px] z-20">
     <div class="absolute inset-0 flex justify-center items-center z-0">
         <div class="hidden md:flex w-[1500px] h-[30vh] lg:h-[25vh] bg-gradient-to-b from-[#4E0000] to-[#291800] rounded-full blur-[280px]"></div>
     </div>
@@ -164,7 +164,7 @@
 </div>
 
 <!-- footer -->
-<footer class="bg-[#190E0E] relative w-full min-h-[350px] z-20 mt-[780px] md:mt-[150px] text-white">
+<footer class="bg-[#190E0E] relative w-full min-h-[350px] z-20 mt-[200px] text-white">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-[64px] space-y-[32px]">
         <div class="flex flex-wrap justify-between items-center gap-8">
             <div class="flex items-center space-x-8">
@@ -178,10 +178,10 @@
                 </div>
             </div>
             <nav class="flex flex-wrap gap-4 items-center text-sm sm:text-base">
-                <a href="#" class="hover:text-gray-300 transition">Strona główna</a>
-                <a href="#" class="hover:text-gray-300 transition">Administracja</a>
-                <a href="#" class="hover:text-gray-300 transition">Regulamin</a>
-                <a href="#">
+                <a href="../../Landing-page/src/index.html" class="hover:text-gray-300 transition cursor-pointer">Strona główna</a>
+                <a href="../../Landing-page/src/index.html#zarzad" class="hover:text-gray-300 transition cursor-pointer">Zarząd</a>
+                <a href="../../Regulations/src/index.html" class="hover:text-gray-300 transition">Regulamin</a>
+                <a href="../../Landing-page/src/index.html#tryby">
                     <button class="bg-gradient-to-tr from-[#FF2323] to-[#BC2A2A] rounded-full px-6 sm:px-8 py-2 duration-300 hover:bg-[#BC2A2A] hover:scale-[98%] flex items-center justify-center gap-2">
                         <img src="./assets/icons/shop.png" draggable="false"> Sklep
                     </button>
@@ -195,9 +195,9 @@
                 EN - CubePixel.pl server is not associated with Mojang or Microsoft in any way.
             </p>
             <div class="flex gap-4">
-                <a href="#"><img src="./assets/icons/yt.png" class="duration-300 hover:scale-[105%]" draggable="false"></a>
-                <a href="#"><img src="./assets/icons/tt.png" class="duration-300 hover:scale-[105%]" draggable="false"></a>
-                <a href="#"><img src="./assets/icons/dc.png" class="duration-300 hover:scale-[105%]" draggable="false"></a>
+                <a href="https://www.youtube.com/@CubePixel_" target="_blank"><img src="./assets/icons/yt.png" class="duration-300 hover:scale-[105%]" draggable="false"></a>
+                <a href="https://www.tiktok.com/@play.cubepixel.pl" target="_blank"><img src="./assets/icons/tt.png" class="duration-300 hover:scale-[105%]" draggable="false"></a>
+                <a href="https://discord.gg/cubepixel" target="_blank"><img src="./assets/icons/dc.png" class="duration-300 hover:scale-[105%]" draggable="false"></a>
             </div>
         </div>
 

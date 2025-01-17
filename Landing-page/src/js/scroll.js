@@ -8,6 +8,16 @@ document.getElementById('scroll').addEventListener('click', function () {
         }, 500);
     }
 });
+document.getElementById('tryby_link').addEventListener('click', function () {
+    const target = document.getElementById('tryby');
+    if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+        setTimeout(() => {
+            target.classList.add('opacity-100');
+        }, 500);
+    }
+});
 document.getElementById('zarzad_link').addEventListener('click', function () {
     const target = document.getElementById('zarzad');
     if (target) {
